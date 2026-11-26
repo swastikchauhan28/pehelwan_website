@@ -9,10 +9,9 @@ A separate, bilingual website for Pehelwan by Shanik AG Private Limited.
 | `/` | `/marathi/` |
 | `/machine/` | `/marathi/machine/` |
 | `/technology/` | `/marathi/technology/` |
-| `/journey/` | `/marathi/journey/` |
-| `/contact/` | `/marathi/contact/` |
+| `/contact/` (Company) | `/marathi/contact/` (Company) |
 
-The pages are static HTML, CSS and a small progressive JavaScript file. They have no runtime packages, database, checkout flow or hardware control. The Contact page links to the existing MAMA enquiry form; submissions are handled there, not by this repository.
+The pages are static HTML, CSS and a small progressive JavaScript file. They have no runtime packages, database, checkout flow or hardware control. The site is a view-only product showcase. The Company page remains at `/contact/` and `/marathi/contact/` to preserve existing URLs. There are no enquiry forms, submission endpoints, accounts or visitor data storage.
 
 ## Develop
 
@@ -21,7 +20,8 @@ Requires Node.js 20+ to regenerate pages. No package installation is needed.
 ```powershell
 node scripts/build.mjs
 node scripts/check.mjs
-node --check assets/site.js
+node scripts/check-motion.mjs
+node --check public/assets/site.js
 python -m http.server 3001 --bind 127.0.0.1 --directory public
 ```
 

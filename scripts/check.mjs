@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = join(fileURLToPath(new URL('../', import.meta.url)), 'public');
-const pages = ['', 'machine/', 'technology/', 'journey/', 'contact/'];
+const pages = ['', 'machine/', 'technology/', 'contact/'];
 const localFile = route => join(root, route === '' || route.endsWith('/') ? `${route}index.html` : route);
 let checked = 0;
 
@@ -18,7 +18,7 @@ for (const lang of ['en', 'mr']) {
     if ((html.match(/<h1>/g) || []).length !== 1) throw new Error(`Expected one h1: ${route}`);
     if (!html.includes('class="mobile-menu"')) throw new Error(`Missing mobile menu: ${route}`);
     if (!html.includes('<small>by Shanik AG Private Limited</small>') || !html.includes('Pehelwan by Shanik AG Private Limited.')) throw new Error(`Wrong brand attribution: ${route}`);
-    if (!html.includes('href="/assets/site.css"')) throw new Error(`Missing shared styles: ${route}`);
+    if (!html.includes('href="/assets/site.css?v=pehelwan-product-4"')) throw new Error(`Missing shared styles: ${route}`);
     if (html.includes('localhost:') || html.includes('file://')) throw new Error(`Local development URL: ${route}`);
 
     for (const match of html.matchAll(/(?:href|src)="(\/[^"]*)"/g)) {
