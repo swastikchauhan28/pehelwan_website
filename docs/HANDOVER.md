@@ -1,5 +1,26 @@
 # Pehelwan website handover
 
+## 2026-11-26 — Technology update authorized for main
+
+- Done: Owner explicitly requested commit and push of the revised Technology design after the spacing correction. Base local and remote `main` both equal `72a60853f9b027592ee4feac6b862e025b73a449`. Scoped review confirms only the two Technology route bodies changed; the other six generated routes only receive cache query `pehelwan-product-6`. The pre-existing untracked `docs/FULLSTACK-PLAN.md` remains outside the commit.
+- Verification: Fresh generator, eight-route check, controlled motion fixtures, builder/runtime syntax and diff whitespace passed. Focused markup audit found three AI concept cards plus one compact GPS band in each language, no old sparse section. Targeted secret pattern scan found no matches. Headless desktop reduced-motion layout and 430 px frame width were previously checked. These checks do not establish actual phone animation or owner diff review.
+- In progress: Commit and push the explicitly authorized scoped change to auto-deploying `main`, then check the remote revision and live Technology routes. Do not call production readiness certified while visual and owner review gaps remain.
+- Next: Owner reviews live English/Marathi Technology pages, scrolling and animation on a phone. Recovery reference is `72a6085`; redeploy it if an authorized rollback is needed. No data migration or new dependency is involved.
+
+## 2026-11-26 — Technology spacing corrected after owner screenshot
+
+- Done: Removed the tall standalone GPS sowing section and placed its bilingual roadmap copy in a compact fourth illustrated band beside the three AI panels. Tightened Technology and Indian engineering spacing, and made the engineering cards follow the same border, color and text scale. Bumped cache query to `pehelwan-product-6` so the local preview refreshes. No unrelated route content changed beyond that query.
+- Verification: Fresh generator, eight-route checker, motion fixtures, JS syntax and diff whitespace checks passed. A headless Chrome desktop screenshot with reduced motion showed the compact band and engineering cards with substantially less blank space. A 430 px iframe layout audit found no horizontal overflow in the hero, AI cards, sowing band or build cards. Chrome reported the hero image decoded at natural width 2240; its omission in the instantaneous headless screenshot was a capture timing issue. Local preview remains on port 3001.
+- Broken or risky: Owner visual acceptance is still pending, especially actual scrolling and animation on a phone. No commit, push or deployment occurred. The temporary layout and image audit pages were removed. The pre-existing untracked `docs/FULLSTACK-PLAN.md` remains untouched.
+- Next: Review `http://127.0.0.1:3001/technology/` and `/marathi/technology/` at the GPS/engineering transition. If accepted, review this scoped diff and authorize the production commit/push; retain `72a6085` for rollback.
+
+## 2026-11-26 — Technology concept sequence, local preview
+
+- Done: Replaced the text-only Vision AI roadmap on English and Marathi Technology pages with three original SVG concept panels for observation, navigation and targeted treatment. Each panel has restrained decorative motion gated by the existing system reduced-motion preference. Capabilities remain labelled in development/planned, and the visual is explicitly conceptual. Bumped shared asset query to `pehelwan-product-5`. No dependency, form, external destination, hardware connection or runtime JavaScript added.
+- Verification: Fresh `node scripts/build.mjs`, `node scripts/check.mjs`, `node scripts/check-motion.mjs`, both JS syntax checks and `git diff --check` passed. A focused HTML audit found three SVG stages and a concept note in each language, with no old list or form. Local HTTP returned 200 for English/Marathi Technology pages and the stylesheet.
+- Broken or risky: Browser visual control still fails before rendering with kernel-assets os error 3. Phone appearance and actual animation have not been visually accepted. Loopback preview is running at `http://127.0.0.1:3001/technology/` and `/marathi/technology/` for owner review. The change is uncommitted, unpushed and not deployed; production remains revision `72a6085` until verified otherwise.
+- Next: Owner inspects both previews, including a phone and reduced-motion setting, and reviews the diff/claims before any commit or push to auto-deploying `main`. Preserve the existing untracked `docs/FULLSTACK-PLAN.md`; recovery is to discard this scoped local change or redeploy `72a6085` after an authorized release.
+
 ## 2026-11-26 — Repository prepared for Vercel import
 
 - Done: Reviewed the accumulated bilingual product showcase, eight-route generator, changed-file list, media and local delivery. Owner authorized all repository preparation including commit/push, excluding Vercel and Namecheap. Remote `main` matched local base `183b708` before commit. The superseded untracked `docs/FULLSTACK-PLAN.md` is deliberately excluded from the release commit.

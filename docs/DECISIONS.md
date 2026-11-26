@@ -1,5 +1,12 @@
 # Pehelwan website decisions
 
+## 2026-11-26 — Technology field intelligence animation
+
+- Context: The owner asked for animation on Technology similar in explanatory depth to the Home concept, but with a different presentation. The current Technology roadmap repeats the same three ideas in a text list.
+- Choice: replace that list with a distinct three-panel illustrated sequence: visual observation, path planning and targeted treatment. Keep all capability wording conditional, label the drawings as concepts, and mirror the section in Marathi. Animate only decorative SVG elements when system motion preference allows; static diagrams and copy remain understandable without animation or JavaScript.
+- Alternative: duplicate Home's interactive crop-row console. Rejected because it repeats the composition and copy. No new media, runtime dependency, data flow, external destination or hardware connection. Scope: generated Technology pages, shared CSS, cache query and focused static checks. Base revision `72a6085`; pre-existing untracked `docs/FULLSTACK-PLAN.md` stays untouched. Verify both languages, build, route and motion checks, then owner visual review. Publication requires separate release review because `main` auto-deploys.
+- Correction after owner screenshot: The standalone GPS sowing block leaves a large empty area between its short copy and the next section, and the plain Indian engineering cards do not match the new visual sequence. Fold GPS sowing into the sequence as a fourth, compact illustrated band; tighten section spacing and use the same card palette for Indian engineering. This preserves the existing roadmap claim and avoids adding a second sparse section. Recheck both languages and page scope; owner visual review remains necessary.
+
 ## 2026-11-26 — Owner-selected Company photograph
 
 - Owner supplied a photograph of a farmer discussion and asked to use it after seeing the revised Company page. Replace that page's previous team/drone hero image in both languages. Keep the image in its natural landscape composition so participants are not unnecessarily cropped, use descriptive alt text and a factual caption. The previous asset remains untouched because it predates this edit; no other route or product claim changes.

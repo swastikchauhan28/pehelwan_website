@@ -1,5 +1,19 @@
 # Pehelwan standalone site — release review
 
+## Technology update push authorization — 2026-11-26
+
+After seeing the local correction process, the owner explicitly asked to commit and push this Technology update. `main` on origin still matches the recorded base `72a6085`. Fresh generator, eight-route, controlled motion, syntax, whitespace, page-scope and targeted secret checks passed. The change adds no dependency, form, external request, storage, authorization or hardware operation. A prior headless desktop reduced-motion screenshot and 430 px layout measurement support the spacing fix; actual animation on a phone and owner diff review have not been independently confirmed. The push is authorized, but this record does not certify production readiness. After Vercel updates, check both live Technology routes; rollback is redeploying `72a6085` and rechecking those routes.
+
+## Technology spacing correction — 2026-11-26
+
+The owner screenshot showed excessive empty space under the standalone GPS sowing copy and a mismatch with the new AI panel styling. GPS sowing is now a fourth, compact illustrated roadmap band in both languages; the Indian engineering section follows with matching cards and shorter spacing. Fresh build, route, motion, syntax and diff checks passed. Headless Chrome captured the lower desktop layout with reduced motion and a 430 px iframe audit found no horizontal overflow; it also confirmed the hero WebP decoded. Actual scrolling, animated rendering and owner visual acceptance remain open. This candidate is local only; no commit/push/deployment. Rollback remains `72a6085` if a later authorized production release needs to be reversed.
+
+## Technology animation candidate — 2026-11-26
+
+The Technology page now has an illustrated three-stage Vision AI roadmap in English and Marathi. The generated pages contain only static copy and decorative inline SVG, with motion gated by system preference; no visitor data or machine interface is involved. The previous text list was replaced, while the GPS sowing and Indian engineering sections remain. Source revision before the local change: `72a6085`.
+
+Fresh local generator, eight-route checker, controlled motion fixtures, syntax, diff whitespace and focused concept-markup checks passed. Local HTTP returned 200 for both Technology routes and CSS. Browser visual automation failed before rendering (kernel-assets os error 3), so desktop/phone composition and actual animation need owner review at the localhost preview. Review the changed-file diff and capability wording, then confirm both languages and reduced-motion behavior. No production commit, push or deployment has occurred. If released later and unacceptable, redeploy the prior `72a6085` artifact/revision and recheck both Technology routes; no data migration is involved.
+
 ## Repository handoff for Vercel — 2026-11-26
 
 This revision is a view-only, bilingual product website. Fixed copy in `scripts/build.mjs` generates eight HTML pages in `public/`; Vercel should serve only `public/`. Shared CSS/JS supply layout and optional motion, with native disclosures for the engineering/AI illustrations. The only external navigation is the existing MAMA website link. There are no forms, authentication, data storage, API requests or physical machine commands. Product figures are company-reported design references, and the AI capabilities are described as a roadmap. This static approach avoids backend/dependency/credential risk, but copy and visual quality still require human review.

@@ -365,3 +365,67 @@ html[lang="mr"] .launch-copy h1{font-size:clamp(2.6rem,3.8vw,4rem);line-height:1
 @media(max-width:760px){.company-hero .hero-grid{grid-template-columns:1fr;gap:32px;padding-block:42px}.company-hero h1{font-size:clamp(2.8rem,9vw,4.4rem);max-width:14ch}.company-hero .hero-lead{font-size:1rem;margin-top:20px}.company-hero .hero-image{height:auto;aspect-ratio:1.4;object-position:center}.company-hero .hero-visual figcaption{font-size:.67rem}}
 html[lang="mr"] .company-hero h1{line-height:1.3;font-size:clamp(2.6rem,4vw,4.6rem)}
 @media(max-width:760px){html[lang="mr"] .company-hero h1{font-size:clamp(2.5rem,8vw,3.8rem)}}
+
+/* Technology: a compact research sequence, separate from Home's crop-row console. */
+.technology-sequence{background:#171d18;overflow:hidden;padding-block:clamp(70px,6vw,100px)}
+.technology-sequence-intro{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.75fr);gap:7%;align-items:end;margin-bottom:45px}
+.technology-sequence-intro h2{margin:0;line-height:1.1}
+.technology-sequence-intro>p{font-size:1.04rem;max-width:48ch;padding-bottom:5px}
+.technology-sequence-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.tech-stage{display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid #3b4b3e;border-radius:16px;background:#101713}
+.tech-stage-top{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:19px 22px;color:#d6e7d9;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.tech-stage-status{color:var(--accent);font-weight:500;text-align:right;letter-spacing:0;text-transform:none}
+.tech-stage-visual{position:relative;margin:0 14px;border:1px solid #344837;border-radius:9px;background:radial-gradient(circle at 50% 45%,#29433466,transparent 65%),#142019;overflow:hidden}
+.tech-stage-visual svg{display:block;width:100%;height:auto;aspect-ratio:320/210}
+.tech-grid{fill:none;stroke:#506752;stroke-width:.65;opacity:.35}
+.tech-leaf{fill:#8ce5a522;stroke:#9ae2a6;stroke-width:1.5}
+.tech-scan-beam{fill:#8ce5a522;stroke:#8ce5a5aa;stroke-width:1;opacity:.8}
+.tech-focus{fill:none;stroke:#d0ffce;stroke-width:2}
+.tech-focus-dot,.tech-waypoint{fill:#bafac3;stroke:#14301b;stroke-width:3}
+.tech-terrain{fill:none;stroke:#738a70;stroke-width:1.5;opacity:.55}
+.tech-route{fill:none;stroke:#a9efa9;stroke-width:3;stroke-linecap:round;stroke-dasharray:8 7}
+.tech-spray-head{fill:#91dca0;stroke:#dbffdc;stroke-width:1.5}
+.tech-spray-cone{fill:#8ce5a511;stroke:#8ce5a57a;stroke-width:1.5;stroke-dasharray:5 6}
+.tech-drop,.tech-target-core{fill:#b9fac2}
+.tech-target{fill:#8ce5a51c;stroke:#b9fac2;stroke-width:2}
+.tech-stage-copy{padding:27px 24px 31px;flex:1}
+.tech-stage-copy h3{font-size:clamp(1.42rem,2vw,2rem);line-height:1.18;margin-bottom:14px}
+.tech-stage-copy p{font-size:.94rem;line-height:1.65}
+.tech-sowing{display:grid;grid-template-columns:1fr minmax(0,.9fr);gap:6%;align-items:center;margin-top:18px;padding:28px 34px;border:1px solid #3b4b3e;border-radius:16px;background:#101713}
+.tech-sowing .kicker{color:var(--accent);margin-bottom:13px;font-size:.68rem}
+.tech-sowing h3{font-size:clamp(1.5rem,2vw,2rem);margin-bottom:13px}
+.tech-sowing p:last-child{font-size:.94rem;line-height:1.6}
+.tech-sowing-visual{overflow:hidden;border:1px solid #344837;border-radius:9px;background:radial-gradient(circle at 48% 50%,#29433466,transparent 70%),#142019}
+.tech-sowing-visual svg{display:block;width:100%;height:auto}
+.tech-sow-row{fill:none;stroke:#617a63;stroke-width:18;opacity:.28}
+.tech-sow-line{fill:none;stroke:#a9efa9;stroke-width:2;stroke-dasharray:8 8}
+.tech-sow-seed{fill:#b9fac2;stroke:#17331d;stroke-width:3}
+.tech-sow-arrow{fill:none;stroke:#b9fac2;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.technology-sequence-note{margin:20px 0 0;font-size:.7rem;color:#9caf9e}
+/* The supporting build facts continue the same card rhythm without a second empty text-only section. */
+.technology-sequence + .build-section{padding-block:clamp(70px,6vw,96px);background:#111713;border-top:1px solid #344837}
+.technology-sequence + .build-section .section-heading{margin-bottom:30px}
+.technology-sequence + .build-section .section-heading h2{max-width:18ch}
+.technology-sequence + .build-section .build-grid{gap:16px}
+.technology-sequence + .build-section .build-grid article{padding:28px 32px;border-color:#3b4b3e;border-radius:16px;background:#18211a}
+.technology-sequence + .build-section .build-grid h3{font-size:clamp(1.4rem,2vw,1.9rem);margin-bottom:14px}
+.technology-sequence + .build-section .build-grid p{font-size:.94rem;line-height:1.65}
+.technology-sequence + .build-section + .close-section{padding-block:clamp(70px,6vw,96px)}
+html[data-motion="on"] .tech-scan-beam{animation:tech-scan 3.3s ease-in-out infinite alternate}
+html[data-motion="on"] .tech-focus-dot{animation:tech-glow 2.5s ease-in-out infinite}
+html[data-motion="on"] .tech-route{animation:tech-route 1.6s linear infinite}
+html[data-motion="on"] .tech-waypoint{animation:tech-glow 2.4s ease-in-out infinite}
+html[data-motion="on"] .tech-spray-cone{animation:tech-glow 2.5s ease-in-out infinite}
+html[data-motion="on"] .tech-drop{animation:tech-droplet 1.8s ease-in infinite}
+html[data-motion="on"] .tech-drop-b{animation-delay:.5s}
+html[data-motion="on"] .tech-drop-c{animation-delay:1s}
+html[data-motion="on"] .tech-target{animation:tech-glow 1.8s ease-in-out infinite}
+html[data-motion="on"] .tech-sow-line{animation:tech-route 1.6s linear infinite}
+html[data-motion="on"] .tech-sow-seed{animation:tech-glow 2.3s ease-in-out infinite}
+@keyframes tech-scan{to{transform:translateY(104px)}}
+@keyframes tech-glow{50%{opacity:.35}}
+@keyframes tech-route{to{stroke-dashoffset:-30}}
+@keyframes tech-droplet{0%{opacity:0;transform:translateY(0)}25%{opacity:1}90%,100%{opacity:0;transform:translateY(48px)}}
+@media(max-width:900px){.technology-sequence-grid{grid-template-columns:1fr 1fr}.tech-stage:last-child{grid-column:1/-1}.tech-stage:last-child .tech-stage-visual svg{max-height:260px}}
+@media(max-width:760px){.tech-sowing{grid-template-columns:1fr;gap:24px;padding:24px}.technology-sequence + .build-section .section-heading h2{margin-top:15px}}
+@media(max-width:650px){.technology-sequence-intro{grid-template-columns:1fr;gap:22px;margin-bottom:30px}.technology-sequence-intro>p{font-size:1rem}.technology-sequence-grid{grid-template-columns:1fr;gap:18px}.tech-stage:last-child{grid-column:auto}.tech-stage-visual svg{max-height:260px}.tech-stage-copy{padding:23px}.tech-stage-top{padding:17px 20px}.technology-sequence + .build-section .build-grid article{padding:24px}}
