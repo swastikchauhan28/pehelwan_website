@@ -6,8 +6,8 @@ import { fileURLToPath } from 'node:url';
 const root = join(fileURLToPath(new URL('../', import.meta.url)), 'public');
 const pages = ['home', 'machine', 'technology', 'journey', 'contact'];
 const labels = {
-  en: { home: 'Home', machine: 'The machine', technology: 'Technology', journey: 'Our journey', contact: 'Contact', menu: 'Menu', enquire: 'Enquire now', brand: 'by MAMA Agricultural Robotics', company: 'Shanik AG Private Limited', language: 'मराठी', footer: 'Pehelwan is a project of MAMA Agricultural Robotics by Shanik AG Private Limited.', back: 'Back to MAMA' },
-  mr: { home: 'मुख्यपृष्ठ', machine: 'यंत्र', technology: 'तंत्रज्ञान', journey: 'आमचा प्रवास', contact: 'संपर्क', menu: 'मेनू', enquire: 'चौकशी करा', brand: 'मामा ॲग्रिकल्चरल रोबोटिक्सकडून', company: 'शानिक एजी प्रायव्हेट लिमिटेड', language: 'English', footer: 'Pehelwan हा शानिक एजी प्रायव्हेट लिमिटेडच्या मामा ॲग्रिकल्चरल रोबोटिक्सचा प्रकल्प आहे.', back: 'मामा वेबसाइट' },
+  en: { home: 'Home', machine: 'The machine', technology: 'Technology', journey: 'Our journey', contact: 'Contact', menu: 'Menu', enquire: 'Enquire now', brand: 'by Shanik AG Private Limited', company: 'Shanik AG Private Limited', language: 'मराठी', footer: 'Pehelwan by Shanik AG Private Limited.', back: 'Back to MAMA' },
+  mr: { home: 'मुख्यपृष्ठ', machine: 'यंत्र', technology: 'तंत्रज्ञान', journey: 'आमचा प्रवास', contact: 'संपर्क', menu: 'मेनू', enquire: 'चौकशी करा', brand: 'by Shanik AG Private Limited', company: 'Shanik AG Private Limited', language: 'English', footer: 'Pehelwan by Shanik AG Private Limited.', back: 'मामा वेबसाइट' },
 };
 
 const pathFor = (lang, page) => `${lang === 'mr' ? '/marathi' : ''}${page === 'home' ? '/' : `/${page}/`}`;
@@ -21,8 +21,8 @@ const content = {
   en: {
     home: {
       title: 'Pehelwan | Electric farming, closer to the crop',
-      description: 'Meet Pehelwan, MAMA Agricultural Robotics’ compact electric tractor for work between crop rows.',
-      eyebrow: 'A new ground system from MAMA',
+      description: 'Meet Pehelwan by Shanik AG Private Limited, a compact electric tractor for work between crop rows.',
+      eyebrow: 'Electric ground systems / India',
       heading: 'Made for the space between.',
       lead: 'Pehelwan is a compact electric tractor shaped by the rows, turns and daily work of Indian farms.',
       image: 'pehelwan-hero.webp',
@@ -93,8 +93,8 @@ const content = {
   mr: {
     home: {
       title: 'Pehelwan | पीक ओळींमधील कामासाठी इलेक्ट्रिक ट्रॅक्टर',
-      description: 'मामा ॲग्रिकल्चरल रोबोटिक्सचा Pehelwan इलेक्ट्रिक ट्रॅक्टर आणि त्यामागील काम जाणून घ्या.',
-      eyebrow: 'मामाची नवी जमिनीवरील यंत्रणा',
+      description: 'Shanik AG Private Limited चा Pehelwan इलेक्ट्रिक ट्रॅक्टर आणि त्यामागील काम जाणून घ्या.',
+      eyebrow: 'इलेक्ट्रिक शेतयंत्रे / भारत',
       heading: 'दोन ओळींमधल्या कामासाठी.',
       lead: 'Pehelwan हा भारतीय शेतीतील पीक ओळी, वळणे आणि रोजचे काम लक्षात घेऊन बनवला जाणारा छोटा इलेक्ट्रिक ट्रॅक्टर आहे.',
       image: 'pehelwan-hero.webp',

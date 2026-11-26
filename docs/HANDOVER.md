@@ -1,5 +1,12 @@
 # Pehelwan website handover
 
+## 2026-11-26 — Brand attribution correction
+
+- Done: Changed the site lockup and footer in both languages to “Pehelwan by Shanik AG Private Limited”; updated the home descriptions and README, then regenerated all ten pages. MAMA remains named only where it describes the earlier drone work or the existing enquiry form. Increased the small lockup text size to accommodate the longer legal name. `node scripts/check.mjs` and `node --check scripts/build.mjs` passed; the route checker now requires the attribution on every page.
+- In progress: Verify the corrected lockup on a Vercel preview once the new project is imported.
+- Broken or risky: Browser visual inspection remains unavailable because the browser-control kernel fails to start. The longer legal name should be checked on a narrow phone in the eventual Vercel preview.
+- Next: Verify the new preview and then address the separate production-domain release decision. The current MAMA deployment and DNS remain untouched.
+
 ## 2026-11-26 — Standalone site
 
 - Done: Confirmed the supplied repository was empty; cloned it into this directory. Built five English and five Marathi pages, with distinct photographs by page, the road video only on Machine, and MAMA's existing enquiry route on Contact. Only `public/` is served by Vercel's Other static preset; source and release files stay outside it. The current MAMA project remains untouched. `node scripts/build.mjs`, `node scripts/check.mjs`, and JavaScript syntax checks passed. Local HTTP returned 200 for all ten pages, the video and sitemap, and 404 for source/release files. Both external enquiry destinations returned 200. The owner approved commit/push for preview, and commit `43db0c9` was pushed to `swastikchauhan28/pehelwan_website` main; remote SHA was checked.

@@ -1,6 +1,6 @@
 # Pehelwan website
 
-A separate, bilingual website for Pehelwan by MAMA Agricultural Robotics / Shanik AG Private Limited.
+A separate, bilingual website for Pehelwan by Shanik AG Private Limited.
 
 ## Pages
 
