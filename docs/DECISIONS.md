@@ -1,5 +1,11 @@
 # Pehelwan website decisions
 
+## 2026-11-27 — Owner-supplied Pehelwan logo
+
+- Context: The owner supplied a JPEG brand logo and asked to use it on the standalone website. The current site uses a text wordmark and unrelated letter favicon. Base revision `37dc8f9`; the existing untracked `docs/FULLSTACK-PLAN.md` is unrelated and remains untouched.
+- Choice: keep the supplied artwork unchanged as one local asset. Show its emblem in the shared header beside readable English branding and company attribution, the full logo in the footer, and the same artwork as the browser icon. Use CSS cropping only for the compact header placement. This keeps both language routes consistent and avoids altering the supplied artwork or adding a dependency.
+- Alternative: use the full logo in the narrow header. Its Marathi lettering becomes too small to read at navigation height, especially on a phone. Scope: shared generator, CSS, asset and generated pages. Check desktop/phone layout, both languages, links/assets and build. No publishing or commit is implied by this design request; `main` auto-deploys.
+
 ## 2026-11-26 — Technology field intelligence animation
 
 - Context: The owner asked for animation on Technology similar in explanatory depth to the Home concept, but with a different presentation. The current Technology roadmap repeats the same three ideas in a text list.

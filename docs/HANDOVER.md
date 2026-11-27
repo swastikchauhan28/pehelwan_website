@@ -1,5 +1,19 @@
 # Pehelwan website handover
 
+## 2026-11-27 — Logo push authorized
+
+- Done: Owner explicitly requested commit and push after reviewing the local logo placement. Local and remote `main` match base `37dc8f93f0276ebef722699bc5fac931885fac8a`. Stage only the shared logo asset, generator/styles/checker, eight generated pages and relevant records; leave pre-existing untracked `docs/FULLSTACK-PLAN.md` untouched.
+- Verification: Fresh generator, eight-route checker, motion fixtures, both JS syntax checks and diff whitespace passed. All eight pages contain the supplied header/footer/favicon logo, and targeted source secret scan found no matches. Earlier headless desktop, 500 px, 360 px and 320 px checks support the visual layout; real-device/browser-tab acceptance remains unverified.
+- In progress: Commit and push the owner's approved scoped logo change to auto-deploying `main`, then verify remote revision and live asset/pages. Do not claim full production readiness from these checks.
+- Next: Confirm live logo on both languages and a real phone. Recovery reference is `37dc8f9`; a rollback would redeploy that prior revision without data migration.
+
+## 2026-11-27 — Owner-supplied logo placed locally
+
+- Done: Added the unchanged owner-supplied JPEG as `public/assets/pehelwan-logo.jpg` (180,081 bytes). The shared header shows its emblem beside the readable Pehelwan name and Shanik AG attribution; the footer shows the complete artwork; the browser icon references the same asset. Both English and Marathi routes use the shared treatment. Bumped the stylesheet query to `pehelwan-product-7`. No new dependency, data flow, external destination or form.
+- Verification: Fresh eight-page generator, route/asset checker, motion fixtures, JS syntax and diff whitespace checks passed. Headless Chrome screenshots show the desktop and 500 px header and full footer; 360 px English and 320 px Marathi iframe measurements found no horizontal overflow or overlapping controls. The asset hash matches the supplied file and contains no EXIF or XMP metadata. Local preview is running at `http://127.0.0.1:3001/`.
+- Broken or risky: Owner visual acceptance is pending, including the browser tab icon and a real phone. This change is local only, uncommitted and unpushed; production remains at `37dc8f9`. The older untracked `docs/FULLSTACK-PLAN.md` is untouched.
+- Next: Owner reviews the Home page and footer in both languages, then decides whether to authorize a commit/push to the auto-deploying `main`. Recovery is reverting this scoped local change; no migration is involved.
+
 ## 2026-11-26 — Technology update authorized for main
 
 - Done: Owner explicitly requested commit and push of the revised Technology design after the spacing correction. Base local and remote `main` both equal `72a60853f9b027592ee4feac6b862e025b73a449`. Scoped review confirms only the two Technology route bodies changed; the other six generated routes only receive cache query `pehelwan-product-6`. The pre-existing untracked `docs/FULLSTACK-PLAN.md` remains outside the commit.

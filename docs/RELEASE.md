@@ -1,5 +1,13 @@
 # Pehelwan standalone site — release review
 
+## Logo push authorization — 2026-11-27
+
+The owner explicitly requested commit and push of the locally previewed logo change. Remote `main` matches the recorded base `37dc8f9`. Fresh generator, eight-route, motion, syntax, whitespace, shared-markup and targeted source-secret checks passed. The unchanged image has no EXIF/XMP metadata and introduces no dependency, external destination or visitor data flow. Desktop and narrow-width headless checks support the header/footer placement; real-device and browser-tab acceptance remain open, so this is not a production-readiness certification. After the authorized push, check live English/Marathi pages and the asset. Rollback reference: `37dc8f9`; no data migration is involved.
+
+## Owner-supplied logo candidate — 2026-11-27
+
+The unchanged JPEG logo now appears as a cropped emblem in the shared header, complete artwork in the footer and the browser icon on eight English/Marathi pages. The design retains the text brand and company attribution for readability and accessibility. The image has no EXIF/XMP metadata. Fresh generation, route checks, motion fixtures, syntax, whitespace and local desktop/phone-width layout checks passed. No new dependency, data handling or external destination was added. Owner visual review on a real phone and browser tab remains open. This is local only: no commit, push or deployment occurred. The current production reference is `37dc8f9`; there is no data migration or rollback action yet.
+
 ## Technology update push authorization — 2026-11-26
 
 After seeing the local correction process, the owner explicitly asked to commit and push this Technology update. `main` on origin still matches the recorded base `72a6085`. Fresh generator, eight-route, controlled motion, syntax, whitespace, page-scope and targeted secret checks passed. The change adds no dependency, form, external request, storage, authorization or hardware operation. A prior headless desktop reduced-motion screenshot and 430 px layout measurement support the spacing fix; actual animation on a phone and owner diff review have not been independently confirmed. The push is authorized, but this record does not certify production readiness. After Vercel updates, check both live Technology routes; rollback is redeploying `72a6085` and rechecking those routes.
