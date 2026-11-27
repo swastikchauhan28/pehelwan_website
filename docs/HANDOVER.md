@@ -1,5 +1,18 @@
 # Pehelwan website handover
 
+## 2026-11-27 — Full header logo push authorized
+
+- Done: Owner explicitly requested commit and push of the full header logo correction. Remote `main` was confirmed at base `fca680fffc8d2d914d60aca55f317ff196db988d`. Stage only the shared generator, CSS, checker, eight generated pages and current decision/release records. Keep `.preview/` and the pre-existing untracked `docs/FULLSTACK-PLAN.md` outside the commit.
+- Verification: Fresh generator, route checker, motion fixtures, both JavaScript syntax checks and diff whitespace check passed. The source diff adds no dependency, form, external destination or visitor-data flow. Automated visual review remains unavailable; owner approval to push does not establish real-phone appearance.
+- In progress: Commit and push the approved scoped correction to auto-deploying `main`, then verify the remote revision and live English/Marathi pages. Rollback reference is `fca680f` without migration.
+
+## 2026-11-27 — Full artwork in header, local candidate
+
+- Done: Replaced the cropped header emblem and duplicate English wordmark with the complete owner-supplied logo on all eight English/Marathi pages. Kept the company attribution below it, adjusted responsive header sizing and bumped the CSS/JS cache key to `pehelwan-product-8`. The footer and image asset remain unchanged. Base revision is `fca680f`.
+- Verification: Fresh generator, eight-route checker, motion fixtures, both JavaScript syntax checks and `git diff --check` passed. Generated markup contains the same full image in header and footer and no cropped emblem. The local screenshot tools did not produce a render, and the computer-use browser refused a local file URL, so this candidate has not been visually accepted.
+- Broken or risky: Phone and desktop appearance in a real browser remain to be checked. This change is local only, uncommitted and unpushed; the unrelated untracked `docs/FULLSTACK-PLAN.md` remains untouched.
+- Next: Open the disposable local `.preview/header-en.html` and `.preview/header-mr.html` files in a browser, especially at narrow phone widths. They use relative asset paths and are not release files. Commit and push to auto-deploying `main` only after specific approval. Recovery is to restore `fca680f` if a later release needs rollback; no migration is involved.
+
 ## 2026-11-27 — Logo push authorized
 
 - Done: Owner explicitly requested commit and push after reviewing the local logo placement. Local and remote `main` match base `37dc8f93f0276ebef722699bc5fac931885fac8a`. Stage only the shared logo asset, generator/styles/checker, eight generated pages and relevant records; leave pre-existing untracked `docs/FULLSTACK-PLAN.md` untouched.

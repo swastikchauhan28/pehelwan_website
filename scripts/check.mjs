@@ -18,8 +18,9 @@ for (const lang of ['en', 'mr']) {
     if ((html.match(/<h1>/g) || []).length !== 1) throw new Error(`Expected one h1: ${route}`);
     if (!html.includes('class="mobile-menu"')) throw new Error(`Missing mobile menu: ${route}`);
     if (!html.includes('<small>by Shanik AG Private Limited</small>') || !html.includes('Pehelwan by Shanik AG Private Limited.')) throw new Error(`Wrong brand attribution: ${route}`);
-    if (!html.includes('class="brand-mark"') || !html.includes('class="footer-logo"') || !html.includes('rel="icon" type="image/jpeg" href="/assets/pehelwan-logo.jpg"')) throw new Error(`Missing supplied logo: ${route}`);
-    if (!html.includes('href="/assets/site.css?v=pehelwan-product-7"')) throw new Error(`Missing shared styles: ${route}`);
+    if (!html.includes('class="header-logo"') || !html.includes('class="footer-logo"') || !html.includes('rel="icon" type="image/jpeg" href="/assets/pehelwan-logo.jpg"')) throw new Error(`Missing supplied logo: ${route}`);
+    if (html.includes('class="brand-mark"')) throw new Error(`Cropped header emblem remains: ${route}`);
+    if (!html.includes('href="/assets/site.css?v=pehelwan-product-8"')) throw new Error(`Missing shared styles: ${route}`);
     if (html.includes('localhost:') || html.includes('file://')) throw new Error(`Local development URL: ${route}`);
 
     for (const match of html.matchAll(/(?:href|src)="(\/[^"]*)"/g)) {

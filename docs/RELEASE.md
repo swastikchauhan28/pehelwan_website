@@ -1,5 +1,13 @@
 # Pehelwan standalone site — release review
 
+## Full header logo push authorization — 2026-11-27
+
+The owner explicitly requested commit and push after receiving local English/Marathi review files. Remote `main` matched `fca680f` before the push. Fresh generator, eight-route, motion, syntax and whitespace checks passed. The scope is the complete logo in the shared header, responsive sizing, cache key and generated pages; no new dependency, external destination, visitor data flow or hardware behavior. Automated desktop/phone visual inspection was blocked, and the owner has not reported a real-phone check, so no visual or general production-readiness certification is claimed. Verify the live pages after the authorized push. Recovery reference: `fca680f`; no migration.
+
+## Header logo correction — 2026-11-27
+
+The complete supplied logo now appears in both header and footer; the cropped header emblem and repeated English wordmark were removed. This is a shared static presentation change across eight routes, with no new dependency, external request, data collection or hardware interaction. Fresh generation, route, motion, syntax and whitespace checks passed. Browser visual inspection did not complete, so desktop and phone presentation still require owner review. This candidate is local and has not been committed, pushed or deployed. The previous revision `fca680f` is the recovery reference if a later authorized release needs reversal.
+
 ## Logo push authorization — 2026-11-27
 
 The owner explicitly requested commit and push of the locally previewed logo change. Remote `main` matches the recorded base `37dc8f9`. Fresh generator, eight-route, motion, syntax, whitespace, shared-markup and targeted source-secret checks passed. The unchanged image has no EXIF/XMP metadata and introduces no dependency, external destination or visitor data flow. Desktop and narrow-width headless checks support the header/footer placement; real-device and browser-tab acceptance remain open, so this is not a production-readiness certification. After the authorized push, check live English/Marathi pages and the asset. Rollback reference: `37dc8f9`; no data migration is involved.
